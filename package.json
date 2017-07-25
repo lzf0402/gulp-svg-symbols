@@ -1,7 +1,7 @@
 {
-  "name": "gulp-svg-symbols",
-  "version": "2.0.2",
-  "description": "Convert SVG files to symbols with gulp",
+  "name": "gulp-svg-combine",
+  "version": "1.0.0",
+  "description": "Combine SVG files to one with gulp and use by 'symbols'; Fork from https://github.com/Hiswe/gulp-svg-symbols.git",
   "main": "index.js",
   "scripts": {
     "hint": "gulp hint",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Hiswe/gulp-svg-symbols.git"
+    "url": "https://github.com/lzf0402/gulp-svg-symbols.git"
   },
   "keywords": [
     "gulpplugin",
@@ -17,15 +17,11 @@
     "symbols"
   ],
   "author": {
-    "name": "Yannick Aïvayan",
-    "email": "yannick.aivayan@hiswe.net",
-    "url": "http://hiswe.net"
+    "name": "PhonenixLu",
+    "email": "lzf0402@gmail.com",
+    "url": "https://github.com/lzf0402"
   },
   "license": "WTFPL",
-  "bugs": {
-    "url": "https://github.com/Hiswe/gulp-svg-symbols/issues"
-  },
-  "homepage": "https://github.com/Hiswe/gulp-svg-symbols",
   "dependencies": {
     "bluebird": "^3.3.5",
     "cheerio": "^0.22.0",
