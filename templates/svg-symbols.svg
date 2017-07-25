@@ -1,9 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg"<% if(svgClassname) {%> class="<%= svgClassname %>"<% } %>><% if(defs) {%>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"<% if(svgClassname) {%> class="<%= svgClassname %>"<% } %>><% if(defs) {%>
   <defs>
-      <%= defs %>
-  </defs><% } %><% _.forEach( icons, function( icon ){ %>
-    <symbol id="<%= icon.id %>" viewBox="<%= icon.svg.viewBox %>"<% if (icon.svg.originalAttributes.preserveAspectRatio) {%> preserveAspectRatio="<%= icon.svg.originalAttributes.preserveAspectRatio %>" <% }%>><% if (icon.title) {%>
+  	<%= defs %>
+  </defs><% } %>
+  <% _.forEach( icons, function( icon ){ %>
+  <symbol id="<%= icon.id %>" viewBox="<%= icon.svg.viewBox %>"<% if (icon.svg.originalAttributes.preserveAspectRatio) {%> preserveAspectRatio="<%= icon.svg.originalAttributes.preserveAspectRatio %>" <% }%>><% if (icon.title) {%>
       <title><%= icon.title %></title><% }%>
       <%= icon.svg.content %>
-    </symbol><%
-}); %></svg>
+  </symbol><%
+  }); %>
+
+  <% _.forEach( icons, function( icon, idx ){ %>
+  <use xlink:href="#<%= icon.id %>" width="20" height="20" x="0" y="<%= idx*20 %>" fill="#666666"></use><%
+  }); %>
+
+</svg>
