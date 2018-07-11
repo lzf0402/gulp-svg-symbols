@@ -1,11 +1,12 @@
 {
   "name": "gulp-svg-combine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Combine SVG files to one with gulp and use by 'symbols'; Fork from https://github.com/Hiswe/gulp-svg-symbols.git",
   "main": "index.js",
   "scripts": {
     "hint": "gulp hint",
-    "test": "gulp test"
+    "test": "gulp test",
+    "pub": "npm publish"
   },
   "repository": {
     "type": "git",
